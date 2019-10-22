@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>code in the dark</title>
+
+    <meta name="description" content="made with love">
+    <meta name="author" content="thomas janhonen">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="reveal/css/reveal.css">
+    <link rel="stylesheet" href="reveal/css/theme/codeinthedark.css" id="theme">
+
+    <link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+
+    <script>
+    window.twttr = !function(document, script, id) {
+      let js, fjs = document.getElementsByTagName(script)[0]
+
+      t = window.twttr || {}
+      if (document.getElementById(id)) return t
+
+      js = document.createElement(script)
+      js.id = id
+      js.src = "https://platform.twitter.com/widgets.js"
+
+      fjs.parentNode.insertBefore(js, fjs)
+
+      t._e = []
+      t.ready = function(f) {
+        t._e.push(f)
+      }
+
+      return t
+    }(document, "script", "twitter-wjs")
+    </script>
+
+    <!-- Print and PDF export -->
+    <script>
+    let link = document.createElement( 'link' )
+    link.rel = 'stylesheet'
+    link.type = 'text/css'
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css'
+    document.getElementsByTagName( 'head' )[0].appendChild( link )
+    </script>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown data-background="reveal/image/code_in_the_dark.png" data-background-position="bottom">
+        </section>
+
+        <section data-background="reveal/image/code_in_the_dark-bare.png" data-background-position="bottom">
+          <div class="person-container">
+            <div class="person_">
+              <img src="reveal/image/me.png" alt="thomas janhonen" title="thomas janhonen" class="person">
+              <pre><code class="hljs" data-line-numbers>const name = 'Thomas Janhonen'
+let information:Object = {
+  position: 'founder, engineer, CTO',
+  hasAbilities: [
+    'JavaScript', 'Ruby', 'HTML', 'Linux (ಠ_ಠ)', 'Jekyll', 'docker', 'go',
+    'network', 'architecture'
+  ],
+
+  twitter: '@thomas_janhonen'
+}
+              </code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section data-markdown data-background="reveal/image/code_in_the_dark-bare.png" data-background-position="bottom">
+          <textarea data-template>
+            # today
+            - basic
+
+            Note:
+            mention some stuff
+          </textarea>
+        </section>
+
+        <section>
+          <section data-markdown data-background="reveal/image/code_in_the_dark-bare.png" data-background-position="bottom">
+            <textarea data-template>
+              # content
+            </textarea>
+          </section>
+        </section>
+
+        <!-- <section data-markdown data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+          <script type="text/template">
+            # \,,/(^_^)\,,/
+          </script>
+        </section> -->
+
+        <section data-markdown data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+          <textarea data-template>
+            # thank you \o/
+          </textarea>
+        </section>
+      </div>
+    </div>
+
+    <script src="reveal/js/reveal.js"></script>
+
+    <script>
+    Reveal.initialize({
+      controls: false,
+
+      progress: true,
+      history: true,
+
+      margin: 0.1,
+
+      //width: '1200',
+      //height: '675',
+      minScale: 0.35, maxScale: 1,
+
+      transition: 'slide',
+
+      dependencies: [
+        { src: 'reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+        { src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+        { src: 'reveal/plugin/notes/notes.js', async: true }
+      ]
+    })
+    </script>
+  </body>
+</html>
